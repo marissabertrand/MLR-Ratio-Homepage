@@ -1,0 +1,243 @@
+body{
+    margin: 0px;
+    background-color: #CEF2EC;
+}
+/*Header*/
+.Header{
+    display: flex;
+}
+.Header .HBanner{
+    width: 100%;
+}
+.Header .HGradient{
+    position: absolute;
+    max-width: 50%;
+    top: 0px;
+    left: 0px;
+}
+.Header .HLogo{
+    position: absolute;
+    max-width: 20%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+}
+.Header .menu{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+.Header .menu a{
+    padding-left: 4vw;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*Body*/
+.body{
+    background-color: #CEF2EC;
+}
+#Purpose{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    background-color: #59428C;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    margin-top: 1.5vw;
+    padding: 1.5vw;
+    text-align: center;
+}
+p{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color: #59428C;
+}
+#TheApp{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    background-color: #59428C;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    margin-top: 1.5vw;
+    padding: 1.5vw;
+    text-align: center;    
+}
+.AppScreens{
+    margin: 1.5vw;
+    height: 1500px;
+    background-color: limegreen;
+}
+#Founders{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    background-color: #59428C;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    margin-top: 1.5vw;
+    padding: 1.5vw;
+    text-align: center;    
+}
+.FoundersGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.FoundersGrid .bio_img{
+    max-width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.FoundersGrid p{
+    padding: 1.5vw;
+    margin-bottom: 0px;
+}
+#Resources{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    background-color: #59428C;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    margin-top: 1.5vw;
+    padding: 1.5vw;
+    text-align: center;     
+}
+.ResourcesContainer{
+    display: flex;
+}
+.ResourcesContainer .Bandaid{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+.ResourcesContainer p{
+    position: absolute;
+    margin: 7% 25% 7% 25%;
+    background-color: lightgray;
+    opacity: 0.75;
+    border-radius: 25px;
+    padding: 1%;
+}
+.ResourcesCards{
+    width: 80%;
+    margin: 1.5vw auto 1.5vw auto;
+}
+.ResourcesCards .card{
+    border-radius: 25px;
+}
+.ResourcesCards .card-img-top{
+    border-radius: 25px;
+}
+.ResourcesCards .card-body{
+    min-height: 25vh;
+    max-height: 30vh;
+    margin: 10% 5% 5% 5%;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2vw;
+    color: #59428C;
+}
+.ResourcesCards .card-body .btn{
+    color: #59428C;
+    border-color: #59428C;
+}
+.ResourcesCards .card-body .btn:hover{
+    background-color: #59428C;
+    color: white;
+}
+.footer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer .SocialMediaGrid{
+    display: grid;
+    grid-template-columns: 5vw 5vw;
+    grid-template-rows: 10vh 10vh 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.footer .SocialMediaGrid p{
+    font-size: 1vw;
+    margin: 15px 0px 10px 0px;
+}
+.footer .LogoGrid{
+    display: grid;
+    grid-template-rows: 10vh 10vh 10vh;
+}
+.footer .LogoGrid .FLogo{
+    max-height: 80%;
+    margin: auto;
+}
+.footer .LogoGrid p{
+    font-size: 1vw;
+    margin: auto;
+}
+.footer .AppAG{
+    margin: auto;
+    height: 15vh;
+}
+@media (max-width: 768px){
+.FoundersGrid{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.footer{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 10vh 5vh 7.5vh;
+}
+.footer .LogoGrid{
+    display: grid;
+    grid-row: 1;
+    grid-template-rows: 5vh 2.5vh 2.5vh;
+}
+.footer .LogoGrid{
+    max-height: 50%;
+}
+.footer .LogoGrid p{
+    margin: 0px;
+}
+.footer .SocialMediaGrid{
+    display: grid;
+    grid-template-rows: 5vh;
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-row: 2;
+}
+.footer .SocialMediaGrid p{
+    display: none;
+}
+.footer .SocialMediaGrid img{
+    height: 5vh;
+}
+.footer .AppAG{
+    height: 5vh;
+    grid-row: 3;
+}
+}
+
+
