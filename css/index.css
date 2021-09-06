@@ -1,56 +1,35 @@
 body{
     margin: 0px;
-    background-color: #CEF2EC;
+    background-color: white;
 }
+
 /*Header*/
 .Header{
     display: flex;
-}
-.Header .HBanner{
-    width: 100%;
-}
-.Header .HGradient{
-    position: absolute;
-    max-width: 50%;
-    top: 0px;
-    left: 0px;
+    background-color: #CEF2EC;
+    min-height: 10vh;
 }
 .Header .HLogo{
     position: absolute;
-    max-width: 20%;
-    margin-top: 2.5%;
-    margin-left: 2.5%;
+    max-width: 5%;
+    margin: 1.25% 0% 0% 5%;
 }
 .Header .menu{
     position: absolute;
-    margin-top: 10%;
-    margin-left: 35%;
+    margin: 1.25% 0% 0% 55%;
 }
 .Header .menu a{
     padding-left: 4vw;
-    color: white;
     font-family: Verdana, Tahoma, sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.25vw;
+    color: #59428C;
+    text-shadow: 0 0 5px white;
     text-decoration: none;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 /*Body*/
 .body{
-    background-color: #CEF2EC;
-}
-#Purpose{
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 2.5vw;
-    background-color: #59428C;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-    margin-top: 1.5vw;
-    padding: 1.5vw;
-    text-align: center;
+    background-color: white;
 }
 p{
     font-family: Verdana, Tahoma, sans-serif;
@@ -58,38 +37,113 @@ p{
     text-align: center;
     color: #59428C;
 }
-#TheApp{
+h1{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    color: #59428C;
+}
+.AboutSec{
+    display: flex;
+    background: linear-gradient(135deg, #CEF2EC, white, #CEF2EC);
+    min-height: 100vh;
+}
+.VN_HomewMenu{
+    position: absolute;
+    max-height: 60vh;
+    margin: 10% 0% 0% 15%;
+}
+.AboutSec .AppAG{
+    height: 15vh;
+    margin: 30% 0% 0% 57%;
+}
+.AboutSec p{
+    color: #59428C;
+    text-shadow: 0 0 1.5px white;
+    position: absolute;
+    padding-top: 5px;
+    margin: 20% 15% 0% 40%;
+}
+
+/*Body - Features Section*/
+#Features{
+    padding: 1.5vw;
+    margin: 1.5vw 30% 0% 30%;
+    text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 2.5vw;
-    background-color: #59428C;
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg,#CEF2EC, #59428C);
                 -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-    margin-top: 1.5vw;
+                -webkit-text-fill-color: transparent;
+}    
+#carouselExampleIndicators{
+    margin: 0% auto 0% auto;
+    max-width: 90%;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #CEF2EC, #59428C);
+    box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+                -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+                -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+                -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 5px;
+    background-color: white;
+    opacity: 0.4;
+}
+.carousel-item .VN_App_Img{
+    display: block;
+    max-height: 60vh;
+    margin: 1% auto 10% auto;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: gray;
+    height: 42px;
+    width: 42px;
+    border-radius: 25%;
+    margin: auto 1%;
+}
+.carousel-item p{
+    font-size: 1.5vw;
+    color: white;
+    text-shadow: 0 0 1px white;
+}
+.FeaturesGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    grid-gap: 5px;
+    align-content: center;
+    width: 80%;
+    margin: 5% auto 0% auto;
+}
+.FeaturesGrid h1{
     padding: 1.5vw;
-    text-align: center;    
+    margin: 1% 0% 0% 0%;
 }
-.AppScreens{
-    margin: 1.5vw;
-    height: 1500px;
-    background-color: limegreen;
+.FeaturesGrid p{
+    padding: 1.5vw;
+    margin: 1% 0% 0% 0%;
 }
-#Founders{
+
+/*Body - Our Team Section*/
+#OurTeam{
+    padding: 1.5vw;
+    margin: 1.5vw 30% 0% 30%;
+    text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 2.5vw;
-    background-color: #59428C;
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg,#CEF2EC, #59428C);
                 -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-    margin-top: 1.5vw;
-    padding: 1.5vw;
-    text-align: center;    
+                -webkit-text-fill-color: transparent;   
 }
-.FoundersGrid{
+.TeamGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
@@ -98,28 +152,28 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
-.FoundersGrid .bio_img{
+.TeamGrid .bio_img{
     max-width: 30vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.FoundersGrid p{
+.TeamGrid p{
     padding: 1.5vw;
     margin-bottom: 0px;
 }
+
+/*Body - Resources Section*/
 #Resources{
+    padding: 1.5vw;
+    margin: 1.5vw 30% 0% 30%;
+    text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 2.5vw;
-    background-color: #59428C;
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg,#CEF2EC, #59428C);
                 -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-    margin-top: 1.5vw;
-    padding: 1.5vw;
-    text-align: center;     
+                -webkit-text-fill-color: transparent;      
 }
 .ResourcesContainer{
     display: flex;
@@ -165,8 +219,10 @@ p{
     background-color: #59428C;
     color: white;
 }
+
+/*Footer*/
 .footer{
-    background-color: white;
+    background-color: #CEF2EC;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -197,8 +253,75 @@ p{
     margin: auto;
     height: 15vh;
 }
-@media (max-width: 768px){
-.FoundersGrid{
+
+/*Mobile Media Queries*/
+@media (max-width: 320px){
+
+/*Mobile - Header Section*/
+.Header .HLogo{
+    position: absolute;
+    max-width: 25%;
+    margin: 2.5% 35% 0% 37.5%;
+}
+.Header .menu{
+    display: none;
+    position: absolute;
+    margin: 1.25% 0% 0% 55%;
+}
+.Header .menu a{
+    padding-left: 4vw;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.25vw;
+    color: #59428C;
+    text-shadow: 0 0 5px white;
+    text-decoration: none;
+}
+
+/*Mobile - About Section*/
+.AboutSec{
+    display: flex;
+    background: linear-gradient(135deg, #CEF2EC, white, #CEF2EC);
+    min-height: 100vh;
+}
+.VN_HomewMenu{
+    position: absolute;
+    max-height: 60vh;
+    margin: 15% 20% 0% 22.5%;
+}
+.AboutSec p{
+    color: #59428C;
+    text-shadow: 0 0 1.5px white;
+    font-size: 4.5vw;
+    position: absolute;
+    padding-top: 60vh;
+    margin: 20% 25% 0% 27.5%;
+}
+.AboutSec .AppAG{
+    position: absolute;
+    height: 7.5vh;
+    margin: 90vh 40% 0% 40%;
+}
+/*Mobile - Features Section*/
+#Features{
+    padding: 1.5vw;
+    margin: 1.5vw 30% 0% 30%;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 7.5vw;
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg,#CEF2EC, #59428C);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+}    
+.carousel-item .VN_App_Img{
+    display: block;
+    max-height: 60vh;
+    margin: 1% auto 75% auto;
+}
+.carousel-item p{
+    font-size: 4.5vw;
+}
+.FeaturesGrid{
     display: grid;
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr;
@@ -206,10 +329,74 @@ p{
     margin-left: 10%;
     margin-right: 10%;
 }
+.FeaturesGrid h1{
+    font-size: 4.5vw;
+    padding: 1.5vw;
+    margin: 1% 0% 0% 0%;
+}
+.FeaturesGrid p{
+    font-size: 4.5vw;
+    padding: 1.5vw;
+    margin: 1% 0% 0% 0%;
+}
+
+/*Mobile - Founders Section*/
+#OurTeam{
+    padding: 1.5vw;
+    margin: 1.5vw 20% 0% 20%;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 7.5vw;
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg,#CEF2EC, #59428C);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;   
+}
+.TeamGrid{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.TeamGrid .bio_img{
+    max-width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.TeamGrid p{
+    font-size: 4.5vw;
+    padding: 1.5vw;
+    margin-bottom: 0px;
+}
+/*Mobile - Resources Section*/
+#Resources{
+    padding: 1.5vw;
+    margin: 1.5vw 25% 0% 25%;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 7.5vw;
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg,#CEF2EC, #59428C);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;      
+}
+.ResourcesContainer p{
+    position: absolute;
+    margin: 2.5% 15% 2.5% 15%;
+    background-color: lightgray;
+    opacity: 0.75;
+    border-radius: 25px;
+    padding: 1%;
+    font-size: 4vw;
+}
+/*Mobile - Footer Section*/
 .footer{
     display: grid;
     grid-template-columns: none;
-    grid-template-rows: 10vh 5vh 7.5vh;
+    grid-template-rows: 10vh 7.5vh 7.5vh;
 }
 .footer .LogoGrid{
     display: grid;
@@ -220,23 +407,25 @@ p{
     max-height: 50%;
 }
 .footer .LogoGrid p{
-    margin: 0px;
+    margin: 1.5% 1.5% 0% 1.5%;
+    font-size: 3vw;
 }
 .footer .SocialMediaGrid{
     display: grid;
+    grid-row: 2;
     grid-template-rows: 5vh;
     grid-template-columns: 10vw 10vw 10vw;
-    grid-row: 2;
 }
 .footer .SocialMediaGrid p{
     display: none;
 }
 .footer .SocialMediaGrid img{
+    margin: 6vh 0% 0% 0%;
     height: 5vh;
 }
 .footer .AppAG{
-    height: 5vh;
     grid-row: 3;
+    height: 5vh;
 }
 }
 
