@@ -48,26 +48,38 @@ h1{
     color: #59428C;
 }
 /*Desktop - About*/
-.AboutSec{
-    display: flex;
-    background: linear-gradient(135deg, #CEF2EC, white, #CEF2EC);
-    min-height: 100vh;
+
+.AboutGrid{
+  display: grid;
+  grid-template-areas: "AboutImage AboutText" ". AboutApp";
+  background: linear-gradient(135deg, #CEF2EC, white, #CEF2EC);
+  height: 100vh;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
 }
-.VN_HomewMenu{
-    position: absolute;
-    max-height: 60vh;
-    margin: 10% 0% 0% 15%;
+.AboutGrid div{
+  margin: 10% 10% 10% 10%;
+  justify-content: center;
+  align-content: center;
 }
-.AboutSec .AppAG{
-    height: 15vh;
-    margin: 30% 0% 0% 57%;
+#AboutImage{
+  max-height: 60vh;
+  grid-row: span 2/2;
+  align-self: center;
+  padding-left: 10vw;
 }
-.AboutSec p{
-    color: #59428C;
-    text-shadow: 0 0 1.5px white;
-    position: absolute;
-    padding-top: 5px;
-    margin: 20% 15% 0% 40%;
+#AboutText{
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  align-self: center;
+  color: #59428C;
+  text-shadow: 0 0 1.5px white;
+}
+#AboutApp{
+  max-height: 15vh;
+  align-self: center;
 }
 
 /*Desktop - Features*/
@@ -295,28 +307,38 @@ h1{
     color: #59428C;
 }
 /*Tablet - About*/
-.AboutSec{
-    display: flex;
-    background: linear-gradient(135deg, #CEF2EC, white, #CEF2EC);
-    min-height: 130vh;
+
+.AboutGrid{
+  display: grid;
+  grid-template-areas: "AboutImage AboutText" ". AboutApp";
+  background: linear-gradient(135deg, #CEF2EC, white, #CEF2EC);
+  height: 100vh;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
 }
-.VN_HomewMenu{
-    position: absolute;
-    max-height: 60vh;
-    margin: 10% 40% 0% 40%;
+.AboutGrid div{
+  margin: 10% 10% 10% 10%;
+  justify-content: center;
+  align-content: center;
 }
-.AboutSec p{
-    color: #59428C;
-    text-shadow: 0 0 1.5px white;
-    font-size: 4.5vw;
-    text-align: center;
-    padding-top: 60vh;
-    margin: 15% 15% 0% 15%;
+#AboutImage{
+  max-height: 60vh;
+  grid-row: span 2/2;
+  align-self: center;
+  padding-left: 10vw;
 }
-.AboutSec .AppAG{
-    position: absolute;
-    height: 15vh;
-    margin: 110vh 42.5% 0% 42.5%; 
+#AboutText{
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  align-self: center;
+  color: #59428C;
+  text-shadow: 0 0 1.5px white;
+}
+#AboutApp{
+  max-height: 15vh;
+  align-self: center;
 }
 
 /*Tablet - Features*/
@@ -373,6 +395,7 @@ h1{
     justify-content: space-evenly;
     margin-left: 10%;
     margin-right: 10%;
+    padding-top: 5vh;
 }
 .FeaturesGrid h1{
     font-size: 4.5vw;
@@ -556,31 +579,39 @@ h1{
     display: none;
 }  
 /*Mobile - About*/
-.AboutSec{
-    display: flex;
-    background: linear-gradient(135deg, #CEF2EC, white, #CEF2EC);
-    min-height: 100vh;
+
+.AboutGrid{
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: linear-gradient(135deg, #CEF2EC, white, #CEF2EC);
+  height: 120vh;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
 }
-.VN_HomewMenu{
-    position: absolute;
-    max-height: 60vh;
-    margin: 10% 22.5% 0% 22.5%;
+.AboutGrid div{
+  margin: 10% 10% 10% 10%;
+  justify-content: center;
+  align-content: center;
 }
-.AboutSec p{
-    color: #59428C;
-    text-shadow: 0 0 1.5px white;
-    font-size: 4.5vw;
-    padding-top: 60vh;
-    display: block;
-    text-align: center;
-    margin: 20% 22.5% 0% 22.5%;
+#AboutImage{
+  max-height: 60vh;
+  align-self: center;
+  padding-top: 5vh;
 }
-.AboutSec .AppAG{
-    position: absolute;
-    display: block;
-    text-align: center;
-    height: 7.5vh;
-    margin: 90vh 37.5% 0% 37.5%;  
+#AboutText{
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 4.5vw;
+  text-align: center;
+  align-self: center;
+  color: #59428C;
+  text-shadow: 0 0 1.5px white;
+}
+#AboutApp{
+  max-height: 15vh;
+  align-self: center;
+  padding-bottom: 5vh;
 }
 
 /*Mobile - Features*/
@@ -637,6 +668,7 @@ h1{
     justify-content: space-evenly;
     margin-left: 10%;
     margin-right: 10%;
+    padding-top: 5vh;
 }
 .FeaturesGrid h1{
     font-size: 4.5vw;

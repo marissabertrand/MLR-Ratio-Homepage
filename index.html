@@ -9,11 +9,11 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> 
       <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
-    <title>VaccineNow App</title>
+    <title>VaccineNow App Landing Page</title>
     <body>
         <header>
             <div class="Header">
-                <img src="images/Logo Text.png" class="HLogo">
+                <img src="images/Logo Text.png" class="HLogo" alt="VaccineNow Logo Image">
                 <div class="menu">
                     <a href="#About">About</a>
                     <a href="#Features">Features</a>
@@ -24,10 +24,11 @@
         </header>
 
         <section class="body">
-            <div class=AboutSec>
-                <img src="images/VN_HomewMenu.png" class="VN_HomewMenu" alt="...">
-                <img src="images/AppAG.png" class="AppAG">
-                  <p>Schedule your vaccine appointment with home health providers at your convenience</p>
+
+            <div class=AboutGrid>
+                <img id="AboutImage" src="images/VN_HomewMenu.png" alt="Mobile App Screen of Home Page with Menu Expanded">
+                <div id="AboutText">Schedule your vaccine appointment with home health providers at your convenience</div>
+                <img id="AboutApp" src="images/AppAG.png" alt="Image and Link to Download App">
             </div>
             
             <div id="Features">Features</div>
@@ -42,37 +43,37 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/VN_Home2.png" class="VN_App_Img" alt="..."> 
+                    <img src="images/VN_Home2.png" class="VN_App_Img" alt="Mobile App Screen of Home Page with Menu Collapsed"> 
                     <div class="carousel-caption d-block d-md-block">
                       <p>Get vaccinated in a few easy steps. Schedule an appointment. Get updated on local COVID stats.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/VN_VaccineHis2.png" class="VN_App_Img" alt="...">
+                    <img src="images/VN_VaccineHis2.png" class="VN_App_Img" alt="Mobile App Screen of Vaccine History">
                     <div class="carousel-caption d-block d-md-block">
                       <p>And pull up your vaccine history. All in the click of a button.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/VN_MedChecklist2.png" class="VN_App_Img" alt="...">
+                    <img src="images/VN_MedChecklist2.png" class="VN_App_Img" alt="Mobile App Screen of Medical Checklist">
                     <div class="carousel-caption d-block d-md-block">
                       <p>VaccineNow lets you enter all of the lenghty medical paperwork in a few easy swipes. Forget having to remember a million details.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/VN_ScheduleApp.png" class="VN_App_Img" alt="...">
+                    <img src="images/VN_ScheduleApp.png" class="VN_App_Img" alt="Mobile App Screen of Schedule Appointment">
                     <div class="carousel-caption d-block d-md-block">
                       <p>Don't worry. Pick the time that's best for you. Our contracted home health providers are available early morning and late evening.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/VN_En Route.png" class="VN_App_Img" alt="...">
+                    <img src="images/VN_En Route.png" class="VN_App_Img" alt="Mobile App Screen of Home Health Provider En Route">
                     <div class="carousel-caption d-block d-md-block">
                       <p>No more calling a customer service line to see if they're on the way. Just check their ETA in the tracker.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/VN_Arrived.png" class="VN_App_Img" alt="...">
+                    <img src="images/VN_Arrived.png" class="VN_App_Img" alt="Mobile App Screen of Home Health Provider Arrived at Destination">
                     <div class="carousel-caption d-block d-md-block">
                       <p>And that's VaccineNow.</p>
                     </div>
@@ -105,17 +106,17 @@
             <div class="TeamGrid">
               <div class="bio">
                 <p>Lynlee Roeber</p>
-                <img src="images/LR Image.png" class="bio_img">
+                <img src="images/LR Image.png" class="bio_img" alt="Image of Team Member Lynlee Roeber">
                 <p>"Teamwork is essential for creating the best user experience."</p>
               </div>
               <div class="bio">
                 <p>Marissa Bertrand</p>
-                <img src="images/MB Image.png" class="bio_img">
+                <img src="images/MB Image.png" class="bio_img" alt="Image of Team Member Marissa Bertrand">
                 <p>"It doesn't matter how long it takes, just keep going."</p>
               </div>
               <div class="bio">
                 <p>Rachel Pytlak</p>
-                <img src="images/RP Image.png" class="bio_img">
+                <img src="images/RP Image.png" class="bio_img" alt="Image of Team Member Rachel Pytlak">
                 <p>"We're so excited to be launching a service that will help so many people."</p>
               </div>
             </div>
@@ -129,7 +130,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="card">
-                  <img src="images/resources img research.png" class="card-img-top" alt="..." height="250vh;">
+                  <img src="images/resources img research.png" class="card-img-top" alt="Image of Two Men Analyzing Epidemiology Graph in Powerpoint Presentation" height="250vh;">
                   <div class="card-body">
                     <h5 class="card-title">Centers for Disease Control and Prevention (CDC)</h5>
                     <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" class="btn btn-outline-secondary stretched-link" style="width: 100%;">Go to the CDC</a>
@@ -138,7 +139,7 @@
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="images/resources img shot.png" class="card-img-top" alt="..." height="250vh;">
+                  <img src="images/resources img shot.png" class="card-img-top" alt="Image of Nurse Administrating a Shot into a Patient's Arm" height="250vh;">
                   <div class="card-body">
                     <h5 class="card-title">National Institutes of Health (NIH)</h5>
                     <a href="https://covid19.nih.gov/" class="btn btn-outline-secondary stretched-link" style="width: 100%;">Go to the NIH</a>
@@ -147,7 +148,7 @@
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="images/resources img virus.png" class="card-img-top" alt="..." height="250vh;">
+                  <img src="images/resources img virus.png" class="card-img-top" alt="Image of Virus at Microscopic Level" height="250vh;">
                   <div class="card-body">
                     <h5 class="card-title">U.S. Food & Drug Administration (FDA)</h5>
                     <a href="https://www.fda.gov/emergency-preparedness-and-response/counterterrorism-and-emerging-threats/coronavirus-disease-2019-covid-19" class="btn btn-outline-secondary stretched-link" style="width: 100%;">Go to the FDA</a>
@@ -169,11 +170,11 @@
               <p>Instagram</p>
             </div>
             <div class="LogoGrid">
-              <img src="images/Logo Text.png" class="FLogo">
+              <img src="images/Logo Text.png" class="FLogo" alt="VaccineNow Logo Image">
               <p>Contact Us</p>
-              <p>Images Courtesty of the CDC Public Health Image Library (PHIL)</p>
+              <p>Images Courtesy of the CDC Public Health Image Library (PHIL)</p>
             </div>
-            <img src="images/AppAG.png" class="AppAG">
+            <img src="images/AppAG.png" class="AppAG" alt="Image and Link to Download App">
         </footer>
     </body>
     <!--Bootstrap JQuery-->
